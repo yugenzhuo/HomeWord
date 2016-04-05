@@ -1,0 +1,41 @@
+<extend name="Base/common"/>
+<block name="body">
+	<div class="col-xs-12">
+    
+		<table width="100%" border="1">
+        <caption>选择课程</caption>
+			<tr>
+				<td>课程名称</td>
+				<td>操作</td>
+			</tr>
+		<volist name="lessons" id="vo">
+			<tr>
+				<td>{$vo.title}</td>
+				<td>
+					<a href="{:U('selectSession',array('lessonId'=>$vo['id'],'uid'=>$uid))}">select</a>
+				</td>
+			</tr>
+		</volist>
+		</table>
+	</div>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
